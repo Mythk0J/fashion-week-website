@@ -1,239 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fashion Week Show — [City] Fashion Week</title>
-  <meta name="description" content="Official site for [City] Fashion Week — schedules, designers, tickets, and gallery." />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Fashion Week</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">Fashion Week</a>
-
-      <button id="navToggle" class="nav-toggle" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav id="siteNav" class="site-nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#designers">Designers</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#tickets" class="cta">Tickets</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Fashion Week</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="apply.html">Apply</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero" id="home" aria-labelledby="heroTitle">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1 id="heroTitle"><span class="eyebrow">[City] Fashion Week</span><br/>Runway • Innovation • Style</h1>
-          <p class="lead">Join us from <strong>May 15–19</strong> for five nights of runway shows, talks, and exclusive pop-ups featuring world-class designers and emerging talent.</p>
-          <p class="meta">Venue: Grand Hall, Downtown — Doors open at 6:00 PM</p>
-          <div class="hero-ctas">
-            <a href="#tickets" class="btn primary">Buy Tickets</a>
-            <a href="#schedule" class="btn ghost">See Schedule</a>
-          </div>
-        </div>
+  <main class="contact-container">
+    <section class="contact-header">
+      <h1>Contact Us</h1>
+      <p>
+        We'd love to hear from you! Whether you have questions about our Fashion Week events,
+        model applications, or partnerships — get in touch with us below.
+      </p>
+    </section>
 
-        <div class="hero-image" aria-hidden="true">
-          <!-- Placeholder — replace with a proper hero image -->
-          <div class="hero-photo">Photo</div>
-        </div>
+    <section class="contact-info">
+      <div class="info-block">
+        <h3>Email</h3>
+        <p><a href="mailto:info@fashionweek.com">info@fashionweek.com</a></p>
+      </div>
+
+      <div class="info-block">
+        <h3>Phone</h3>
+        <p><a href="tel:1234567890">123-456-7890</a></p>
+      </div>
+
+      <div class="info-block">
+        <h3>Follow Us</h3>
+        <p>
+          <a href="#">Instagram</a> |
+          <a href="#">TikTok</a> |
+          <a href="#">Facebook</a>
+        </p>
       </div>
     </section>
 
-    <section id="about" class="container section about">
-      <h2>About the Show</h2>
-      <p>Fashion Week brings together established houses and new designers to present their seasonal collections. Expect immersive set design, live music, and curated after-parties. Sustainability and innovation are central themes this year.</p>
-    </section>
+    <section class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
 
-    <section id="schedule" class="container section schedule">
-      <h2>Schedule</h2>
-      <div class="grid schedule-grid">
-        <article class="card">
-          <h3>Day 1 — Opening Night</h3>
-          <p class="time">May 15 • 7:00 PM</p>
-          <ul>
-            <li>Opening Ceremony — 7:00 PM</li>
-            <li>Designer: Aurora Lin — 7:30 PM</li>
-            <li>Runway: Collective Futures — 8:15 PM</li>
-          </ul>
-          <a class="btn small" href="#tickets">Reserve</a>
-        </article>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required />
 
-        <article class="card">
-          <h3>Day 2 — Emerging Designers</h3>
-          <p class="time">May 16 • 6:30 PM</p>
-          <ul>
-            <li>Panel: Fashion & Sustainability — 6:30 PM</li>
-            <li>Designers Showcase — 7:30 PM</li>
-          </ul>
-          <a class="btn small" href="#tickets">Reserve</a>
-        </article>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
 
-        <article class="card">
-          <h3>Day 3 — Couture Night</h3>
-          <p class="time">May 17 • 7:00 PM</p>
-          <ul>
-            <li>Runway: Atelier Collections — 7:00 PM</li>
-            <li>After-party — 10:00 PM</li>
-          </ul>
-          <a class="btn small" href="#tickets">Reserve</a>
-        </article>
-
-        <article class="card">
-          <h3>Day 4 — Tech & Fashion</h3>
-          <p class="time">May 18 • 5:30 PM</p>
-          <ul>
-            <li>Talks & Workshops — 5:30 PM</li>
-            <li>Interactive Showcases — 7:00 PM</li>
-          </ul>
-          <a class="btn small" href="#tickets">Reserve</a>
-        </article>
-
-        <article class="card">
-          <h3>Day 5 — Closing Gala</h3>
-          <p class="time">May 19 • 7:00 PM</p>
-          <ul>
-            <li>Finale Runway — 7:00 PM</li>
-            <li>Farewell Reception — 9:30 PM</li>
-          </ul>
-          <a class="btn small" href="#tickets">Reserve</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="designers" class="container section designers">
-      <h2>Featured Designers</h2>
-      <div class="grid designers-grid">
-        <figure class="designer">
-          <div class="designer-photo">A</div>
-          <figcaption>
-            <strong>Aurora Lin</strong>
-            <p>Minimalist tailoring with sustainable fabrication.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="designer">
-          <div class="designer-photo">B</div>
-          <figcaption>
-            <strong>Maison Rive</strong>
-            <p>Heritage couture reimagined for modern wear.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="designer">
-          <div class="designer-photo">C</div>
-          <figcaption>
-            <strong>Collective Futures</strong>
-            <p>Collaborative label showcasing emerging voices.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="designer">
-          <div class="designer-photo">D</div>
-          <figcaption>
-            <strong>Nova Tech</strong>
-            <p>Wearables and tech-infused garments.</p>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="gallery" class="container section gallery">
-      <h2>Gallery</h2>
-      <div class="grid gallery-grid" id="galleryGrid">
-        <!-- Replace placeholders with <img> tags and real image sources -->
-        <button class="gallery-item" data-src="images/gallery1.jpg" aria-label="Open image 1">
-          <div class="thumb">Image 1</div>
-        </button>
-        <button class="gallery-item" data-src="images/gallery2.jpg" aria-label="Open image 2">
-          <div class="thumb">Image 2</div>
-        </button>
-        <button class="gallery-item" data-src="images/gallery3.jpg" aria-label="Open image 3">
-          <div class="thumb">Image 3</div>
-        </button>
-        <button class="gallery-item" data-src="images/gallery4.jpg" aria-label="Open image 4">
-          <div class="thumb">Image 4</div>
-        </button>
-      </div>
-    </section>
-
-    <section id="tickets" class="container section tickets">
-      <h2>Tickets & RSVP</h2>
-      <div class="tickets-grid">
-        <div class="ticket-card">
-          <h3>General Admission</h3>
-          <p class="price">$49</p>
-          <p>Access to runway shows and main floor exhibits.</p>
-          <a class="btn" href="mailto:tickets@fashionweek.example?subject=General%20Admission%20Ticket">Request</a>
-        </div>
-        <div class="ticket-card featured">
-          <h3>VIP Pass</h3>
-          <p class="price">$149</p>
-          <p>Front-row seating, backstage access, and VIP lounge.</p>
-          <a class="btn primary" href="mailto:tickets@fashionweek.example?subject=VIP%20Pass%20Ticket">Request</a>
-        </div>
-        <div class="ticket-card">
-          <h3>Student</h3>
-          <p class="price">$29</p>
-          <p>Discounted admission with valid student ID.</p>
-          <a class="btn" href="mailto:tickets@fashionweek.example?subject=Student%20Ticket">Request</a>
-        </div>
-      </div>
-
-      <form id="rsvpForm" class="rsvp-form" aria-label="RSVP form">
-        <h3>RSVP / Contact</h3>
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input id="name" name="name" required />
-        </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-        </div>
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="3"></textarea>
-        </div>
-        <div class="form-actions">
-          <button type="submit" class="btn primary">Send RSVP</button>
-          <span id="formMsg" class="form-msg" role="status" aria-live="polite"></span>
-        </div>
+        <button type="submit">Send Message</button>
       </form>
-    </section>
-
-    <section class="container section partners">
-      <h2>Partners & Sponsors</h2>
-      <p>Thanks to our partners for making Fashion Week possible. Interested in sponsoring? Contact <a href="mailto:sponsors@fashionweek.example">sponsors@fashionweek.example</a>.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> [City] Fashion Week — All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="/privacy">Privacy</a>
-        <a href="/code-of-conduct">Code of Conduct</a>
-        <a href="/press">Press</a>
-      </nav>
-    </div>
+  <footer>
+    <p>&copy; 2025 Fashion Week. All rights reserved.</p>
   </footer>
-
-  <!-- Lightbox / Modal -->
-  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
-    <button id="lightboxClose" class="lightbox-close" aria-label="Close">✕</button>
-    <img id="lightboxImage" alt="Gallery image" src="" />
-  </div>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
