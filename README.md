@@ -1,40 +1,33 @@
-# Fashion Week — Static Website Template
+# Fashion Week 
+🏠 Home (`index.html`)
+Introduction to Fashion Week and navigation to other pages.
 
-This is a simple, responsive static website template for a Fashion Week show. It includes:
+### 👗 Models (`models.html`)
+Showcase of our runway models with photos and profile links.
 
-- A hero landing section with event dates and CTAs
-- Schedule cards for each day of the festival
-- Featured designers section
-- Image gallery with a lightweight lightbox
-- Tickets/RSVP area with a demo contact form
-- Mobile-friendly navigation
+### 👤 Individual Model Pages (`/models/model-name.html`)
+Each model has a personal page with their biography and portfolio.
 
-How to use
-1. Clone or copy the files into your project directory.
-2. Replace placeholder images in the `gallery` and `hero` with real image files:
-   - `images/gallery1.jpg`, `images/gallery2.jpg`, etc.
-   - Replace the `.hero-photo` placeholder with an actual background image or an <img>.
-3. Customize text, dates, and emails in `index.html`.
-4. Host as a static site (GitHub Pages, Netlify, Vercel, or any static host).
+### ℹ️ About (`about.html`)
+Information about Fashion Week’s mission, vision, and events.
 
-Files
-- index.html — main page
-- css/styles.css — styles
-- js/main.js — client-side interactions
-- README.md — this file
+### 💌 Apply (`apply.html`)
+Application page for new models. Includes:
+- Model requirements  
+- Tips for applicants  
+- Awareness information about safe recruitment  
+- Photo submission form and live contact number
 
-Deployment
-- GitHub Pages: push to a repository and enable Pages in repository settings (use "main" or "gh-pages" branch).
-- Netlify / Vercel: drag-and-drop or connect the repo for CI/CD.
+### ☎️ Contact (`contact.html`)
+Contact form, email, phone number, and social media links.
 
-Notes
-- The RSVP form is client-side only. To accept real RSVPs, connect the form to an API endpoint, serverless function, or a form provider (Formspree, Netlify Forms, etc.).
-- Replace placeholder mailto links with a ticketing provider or a purchase flow.
+---
 
-If you want, I can:
-- Convert this into a React or Vue app
-- Add server-side RSVP handling (Express, Firebase, or serverless)
-- Integrate a payment/ticketing flow or Stripe checkout
-- Create a CMS workflow (Netlify CMS / Contentful) for event updates
+## ✨ Features
+- Responsive design (works on mobile and desktop)
+- Simple and clean HTML/CSS layout
+- Individual model profile pages
+- Contact and application forms
+- Modern navigation and footer layout
 
-Tell me which features you'd like next.
+
